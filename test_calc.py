@@ -30,3 +30,6 @@ class TestCalc(unittest.TestCase):
         """ 異常系 """
         with self.assertRaises(ValueError):
             calc.division(5, 0)
+
+if __name__ == "__main__":
+    unittest.main()
