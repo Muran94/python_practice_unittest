@@ -6,6 +6,10 @@ class TestChordProgression(unittest.TestCase):
         # 正常系
         self.assertEqual(cp.get_key("c"), "Key: C")
         self.assertEqual(cp.get_key("C"), "Key: C")
+        self.assertEqual(cp.get_key("cm"), "Key: Cm")
+        self.assertEqual(cp.get_key("Cm"), "Key: Cm")
+        self.assertEqual(cp.get_key("cM"), "Key: Cm")
+        self.assertEqual(cp.get_key("CM"), "Key: Cm")
         self.assertEqual(cp.get_key("d"), "Key: D")
         self.assertEqual(cp.get_key("D"), "Key: D")
         self.assertEqual(cp.get_key("e"), "Key: E")
